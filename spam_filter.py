@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.externals import joblib
 
 
-def dict():
+def dictionary():
     path = 'data/emails/'
     files = os.listdir(path)
     emails = [path + email for email in files]
@@ -21,9 +21,9 @@ def dict():
             words[i] = ""
 
         
-    dictionary = Counter(words)
-    del dictionary[""]
-    return dictionary.most_common(2000)
+    word_dict = Counter(words)
+    del word_dict[""]
+    return word_dict.most_common(2000)
 
 def dataset(dictionary):
     path = 'data/emails/'
@@ -43,12 +43,12 @@ def dataset(dictionary):
 
         if "ham" in email:
             labels.append(0)
-        if "spam" in email:
+        elif "spam" in email:
             labels.append(1)
 
     return feature_vec, labels
 
-d = dict()
+d = dictionary()
 features, labels = dataset(d)
 
 
@@ -67,7 +67,7 @@ print(accuracy_score(y_test, pred))
 
 while True:
     features = []
-    message = raw_input('Message: ').split(' ')
+    message = raw_input('Message: ').split()
     if message[0] == 'exit':
         joblib.dump(model, 'spam_filter.pkl')
         print('Exiting... Model saved as spam_filter.pkl')
@@ -77,6 +77,6 @@ while True:
             features.append(message.count(word[0]))
         result = model.predict([features])
         if result == 0:
-            print('Not Spam!')
+            print('Not spam')
         else:
-            print("Spam!")
+            print('Spam!')
