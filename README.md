@@ -1,4 +1,4 @@
-# Spam e-mail Filter
+# Spam Email Filter
 
 ## Overview
 Python implementation of training a classifier that can automatically tag the message as 'Spam!' or 'Not spam'.
