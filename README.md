@@ -12,7 +12,7 @@ Install missing dependencies using [pip](https://pypi.org/project/pip/).
 
 
 ## Usage
-Clone this [repository](https://github.com/harishrb/Haberman-Cancer-Survival-EDA) in path and run ``python spam_filter.py`` command in terminal.
+Clone this [repository](https://github.com/harishrb/Haberman-Cancer-Survival-EDA) in path and run ``python spam_filter.py`` from terminal.
 
 
 ![screenshot from 2019-02-09 19-34-00](https://user-images.githubusercontent.com/13174970/52523072-5b0f2c80-2cb3-11e9-91cb-df49ee5766af.png)
