@@ -3,7 +3,7 @@
 ## Overview
 Python implementation of training a classifier that can automatically tag the message as 'Spam!' or 'Not spam'.
 
-![screenshot from 2019-02-09 19-34-00](https://user-images.githubusercontent.com/13174970/52522927-8b55cb80-2cb1-11e9-8b1b-5cd1a5020861.png)
+![screenshot from 2019-02-09 19-34-00](https://user-images.githubusercontent.com/13174970/52523022-bc82cb80-2cb2-11e9-82a2-eeea2d8b3fe5.png)
 
 
 ## Dependencies
