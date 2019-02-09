@@ -1,7 +1,7 @@
 # Spam Email Filter
 
 ## Overview
-Python implementation of training a classifier that can automatically tag the message as 'Spam!' or 'Not spam'.
+Python implementation of training Naive Bayes classifier model to classify spam and non-spam emails. This model is trained and tested on the set of spam and legitimate emails where each email is rendered as separate file.
 
 
 ## Dependencies
